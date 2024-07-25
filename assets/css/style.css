@@ -1,0 +1,53 @@
+@import url("./header.css");
+@import url("./introduction.css");
+@import url("./qualifications.css");
+@import url("./carousel.css");
+@import url("./about-me.css");
+@import url("./email.css");
+@import url("./footer.css");
+@import url("./thank-you-page.css");
+
+:root {
+    /* colors */
+    --primary-white: #E8EBF7;
+    --secondary-gray: #ACBED8;
+    --main-blue: #3066BE;
+    --main-blue-rgba: #3066beaa;
+    --secondary-dark-blue: #001021;
+    --secondary-dark-blue-rgba: #001021e4;
+    --black: #07070A;
+
+    /* Swiper colors */
+    --swiper-pagination-bullet-inactive-color: #E8EBF7;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-opacity: 1;
+
+    /* Font */
+    --font: "Nobile";
+}
+
+body {
+    background-color: var(--black);
+    color: var(--primary-white);
+    font-family: var(--font);
+    padding: 0 1.5rem;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 3rem 0;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--main-blue);
+}
+
+::selection {
+    color: var(--primary-white);
+    background: var(--main-blue);
+}
+
+.divider img:hover {
+    filter: brightness(150%);
+}
