@@ -120,6 +120,26 @@
             </div>
         </section>
 
+        <section class="divider" id="contact-me">
+            <img src="./assets/images/divisorias.svg" alt="três pontinhos de divisória">
+        </section>
+
+        <section class="email">
+            <h2>Você pode entrar em contato comigo por e-mail!</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <!-- <label>Nome</label> -->
+                <input type="text" name="name" placeholder="Digite o seu nome" required>
+                <!-- <label>Email</label> -->
+                <input type="email" name="email" placeholder="Digite o seu email" required>
+                <!-- <label>Mensagem</label> -->
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="accessKey" value="8ee1da97-990f-454d-88ab-7e565080afc6">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/assets/pages/thank-you.html">
+            </form>
+        </section>
+
     </main>
 
     <footer>
