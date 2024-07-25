@@ -1,0 +1,183 @@
+/* Position of texts and photo */
+
+.introduction__items {
+    display: flex;
+    flex-direction: column; 
+}
+  
+.introduction__items h1 {
+    order: 0;
+}
+  
+.max-photo {
+    order: 1;
+}
+  
+.introduction__items p {
+    order: 2;
+}
+
+.introduction__buttons {
+    order: 3;
+}
+
+/* Sets for texts, photo and 'buttons'*/
+
+.introduction__items h1 {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.introduction__items h1 span {
+    color: var(--main-blue);
+    font-weight: 500;
+}
+
+.introduction__items p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+.max-photo {
+    width: 323px;
+    height: 312px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.introduction__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact1 {
+    text-decoration: none;
+    color: var(--secondary-gray);
+    font-weight: 500;
+    font-size: 14px;
+
+    width: 9rem;
+    border: 4px solid var(--main-blue);
+    border-radius: 30px;
+    padding: 0.8rem 1.9rem;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 3rem;
+}
+
+/* Animations */
+
+.introduction__items h1 span:hover {
+    filter: brightness(150%);
+    transition: 1s;
+}
+
+.contact1:hover {
+    background-color: var(--main-blue);
+    color: var(--primary-white);
+    transition: .9s;
+}
+
+.max-photo:hover {
+    filter: brightness(119%);
+    transition: 2s;
+}
+
+.social .linkedin:hover {
+    filter: brightness(150%);
+    transition: 1s;
+}
+
+.social .github:hover {
+    filter: brightness(150%);
+    transition: 1s;
+}
+
+/* responsivity */
+
+@media screen and (min-width: 1024px) {
+
+    .introduction__items {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        column-gap: 2em;
+    }
+
+    .max-photo {
+        width: 517px;
+        height: 504px;
+        margin-bottom: 0;
+        grid-column: 2/3;
+        grid-row: 1/5;
+    }
+
+    .introduction__items h1 {
+        font-size: 26px;
+        align-self: flex-end;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .introduction__items h1 span {
+        font-size: 29px;
+    }
+
+    .introduction__items p {
+        font-size: 19px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-bottom: 0;
+    }
+
+    .introduction__buttons {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .contact1 {
+        margin-bottom: 0;
+        font-size: 24px;
+        border-radius: 23px;
+        width: 11em;
+        padding: 1em 1em;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .introduction {
+        padding: 5em;
+        margin-bottom: 5em;
+    }
+
+    .introduction__items h1 {
+        font-size: 40px;
+    }
+
+    .introduction__items h1 span {
+        font-size: 48px;
+    }
+
+    .introduction__items p {
+        font-size: 23px;
+    }
+
+    .introduction__buttons {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact1 {
+        margin-right: 2em;
+    }
+
+    .social {
+        align-self: flex-start;
+    }
+}
